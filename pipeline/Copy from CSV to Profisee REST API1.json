@@ -37,7 +37,102 @@
 						},
 						"httpCompressionType": "none"
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Name",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Name']"
+								}
+							},
+							{
+								"source": {
+									"name": "Code",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Code']"
+								}
+							},
+							{
+								"source": {
+									"name": "ProductSubCategory",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['ProductSubCategory']"
+								}
+							},
+							{
+								"source": {
+									"name": "Color",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Color']"
+								}
+							},
+							{
+								"source": {
+									"name": "Class",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Class']"
+								}
+							},
+							{
+								"source": {
+									"name": "Style",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Style']"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['Country']"
+								}
+							},
+							{
+								"source": {
+									"name": "StandardCost",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['StandardCost']"
+								}
+							},
+							{
+								"source": {
+									"name": "SafetyStockLevel",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['SafetyStockLevel']"
+								}
+							},
+							{
+								"source": {
+									"name": "ReorderPoint",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['ReorderPoint']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
